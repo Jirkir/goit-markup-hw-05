@@ -9,10 +9,6 @@
   z-index: 99;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop .is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
 .modal {
   position: absolute;
   top: 50%;
@@ -27,7 +23,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.btn-modal-close {
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
-  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  cursor: pointer;
 }
