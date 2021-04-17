@@ -552,7 +552,6 @@ img {
   height: 44px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  transition-property: background-color;
 }
 .social:hover .social-link,
 .social:focus .social-link {
