@@ -24,7 +24,7 @@
   --section-title-font: 36px;
   --footer-small-text: rgba(255, 255, 255, 0.6);
   --additional-font: 'Raleway', sans-serif;
-  --duraction: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
@@ -102,6 +102,9 @@ img {
   line-height: 1.14; /*16px*/
   letter-spacing: 0.02em;
   font-weight: 500;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  transition-property: fill, color;
 }
 
 .site-nav .link {
@@ -116,11 +119,6 @@ img {
 
 .contacts-link + .contacts-link {
   margin-left: 50px;
-}
-.contacts-link {
-  transition-duration: 250ms;
-  transition-timing-function: var(--duraction);
-  transition-property: fill, color;
 }
 
 .contacts .contact {
@@ -187,6 +185,9 @@ img {
 
 .list .opacity-grey {
   color: var(--footer-small-text);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
 }
 .contact-footer {
   margin-top: 9px;
@@ -538,8 +539,11 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition-duration: var(--duraction);
-  transition-property: fill;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  transition-property: fill, background-color;
 }
 
 .social:hover,
@@ -572,7 +576,8 @@ img {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  transition-duration: var(--duraction);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
   transition-property: fill, border;
 }
 .client-logo {
@@ -642,7 +647,7 @@ img {
   line-height: 28px;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding: 0 24px;
+  padding: 63px 24px;
 }
 .gallery-list .item:hover .overlay {
   transform: translateY(0);
