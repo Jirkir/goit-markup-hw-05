@@ -96,15 +96,11 @@ img {
 .site-nav .nav-link + .nav-link {
   margin-left: 50px;
 }
-
 .site-nav .link,
 .contacts .contact {
   line-height: 1.14; /*16px*/
   letter-spacing: 0.02em;
   font-weight: 500;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-property: fill, color;
 }
 
 .site-nav .link {
@@ -127,6 +123,9 @@ img {
 .contact {
   display: flex;
   align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  transition-property: fill, color;
 }
 .contact-logo {
   width: 16px;
@@ -531,6 +530,9 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--fill-social-link);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  transition-property: fill;
 }
 .social {
   display: flex;
@@ -543,7 +545,7 @@ img {
   border-radius: 50%;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-  transition-property: fill, background-color;
+  transition-property: background-color;
 }
 
 .social:hover,
@@ -577,10 +579,13 @@ img {
   align-items: center;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-  transition-property: fill, border;
+  transition-property: border;
 }
 .client-logo {
   fill: var(--fill-social-link);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  transition-property: fill;
 }
 .client-link:hover,
 .client-link:focus {
