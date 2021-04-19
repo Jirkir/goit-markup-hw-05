@@ -125,13 +125,16 @@ img {
   align-items: center;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
-  transition-property: fill, color;
+  transition-property: color;
 }
 .contact-logo {
   width: 16px;
   height: 16px;
   margin-right: 10px;
   fill: var(--primary-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+  transition-property: fill;
 }
 .contact:hover .contact-logo,
 .contact:focus .contact-logo {
