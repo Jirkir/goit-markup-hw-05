@@ -130,7 +130,7 @@ img {
 .contact-logo {
   width: 16px;
   height: 16px;
-  margin-right: 10px;
+  margin-right: 11px;
   fill: var(--primary-text-color);
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
