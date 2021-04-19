@@ -132,9 +132,6 @@ img {
   height: 16px;
   margin-right: 10px;
   fill: var(--primary-text-color);
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-  transition-property: fill;
 }
 .contact:hover .contact-logo,
 .contact:focus .contact-logo {
